@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bloomy-twist</title>
+    
+  </head>
+  <body>
+    <div id="app"></div>
+    <body>
+    <!-- ══ NAVBAR ════════════════════════════════════════════ -->
+    <nav id="navbar">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+          >
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
+          Bloomy Twists
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="order.html">Order</a></li>
+        </ul>
+        <div class="nav-right">
+          <button class="theme-toggle" aria-label="Toggle theme"></button>
+          <a href="order.html" class="cart-wrap">
+            <button class="btn btn-primary btn-sm">
+              <svg
+                width="14"
+                height="14"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"
+                />
+              </svg>
+              Cart
+            </button>
+            <span class="cart-count">0</span>
+          </a>
+          <button class="menu-btn" id="menu-btn" aria-label="Menu">
+            <svg
+              width="22"
+              height="22"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M3 12h18M3 6h18M3 18h18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="order.html">Order</a>
+    </div>
+
+    <!-- ══ HERO ══════════════════════════════════════════════ -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="petal-field"></div>
+
+      <div class="container">
+        <div class="hero-content" style="max-width: 560px">
+          <div class="flex items-center gap-3 mb-6 reveal">
+            <span class="badge badge-soft">✿ Handcrafted</span>
+            <span class="badge badge-outline">Free custom colors</span>
+          </div>
+          <h1 class="hero-title reveal reveal-delay-1">
+            Flowers that<br /><em>never</em> wilt.
+          </h1>
+          <p class="hero-sub reveal reveal-delay-2">
+            Each bloom is hand-twisted with premium pipe cleaners — vibrant,
+            lasting, and made with love for every occasion.
+          </p>
+          <div class="flex flex-wrap gap-4 reveal reveal-delay-3">
+            <a href="products.html" class="btn btn-primary btn-lg">Shop Now</a>
+            <a href="about.html" class="btn btn-outline btn-lg">Our Story</a>
+          </div>
+          <div class="flex flex-wrap gap-6 mt-10 reveal reveal-delay-4">
+            <div>
+              <div
+                style="
+                  font-family: &quot;Cormorant Garamond&quot;, serif;
+                  font-size: 2rem;
+                  font-weight: 600;
+                  color: var(--accent);
+                "
+              >
+                500+
+              </div>
+              <div
+                style="
+                  font-size: 0.78rem;
+                  color: var(--text-muted);
+                  font-weight: 500;
+                "
+              >
+                Happy Customers
+              </div>
+            </div>
+            <div style="width: 1px; background: var(--border)"></div>
+            <div>
+              <div
+                style="
+                  font-family: &quot;Cormorant Garamond&quot;, serif;
+                  font-size: 2rem;
+                  font-weight: 600;
+                  color: var(--accent);
+                "
+              >
+                30+
+              </div>
+              <div
+                style="
+                  font-size: 0.78rem;
+                  color: var(--text-muted);
+                  font-weight: 500;
+                "
+              >
+                Designs
+              </div>
+            </div>
+            <div style="width: 1px; background: var(--border)"></div>
+            <div>
+              <div
+                style="
+                  font-family: &quot;Cormorant Garamond&quot;, serif;
+                  font-size: 2rem;
+                  font-weight: 600;
+                  color: var(--accent);
+                "
+              >
+                100%
+              </div>
+              <div
+                style="
+                  font-size: 0.78rem;
+                  color: var(--text-muted);
+                  font-weight: 500;
+                "
+              >
+                Handmade
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero blob visual -->
+      <div class="hero-visual">
+        <img
+          src="https://images.unsplash.com/photo-1490750967868-88df5691cc22?w=700&q=85"
+          alt="Handmade flowers"
+          loading="lazy"
+        />
+      </div>
+    </section>
+
+    <!-- ══ MARQUEE ════════════════════════════════════════════ -->
+    <div class="marquee">
+      <div class="marquee-inner">
+        <span>Handcrafted with care</span><span class="dot">·</span>
+        <span>Custom colors available</span><span class="dot">·</span>
+        <span>Ships in 3–5 days</span><span class="dot">·</span>
+        <span>Lasts forever</span><span class="dot">·</span>
+        <span>Perfect for gifts</span><span class="dot">·</span>
+        <span>Made to order</span><span class="dot">·</span>
+        <span>Handcrafted with care</span><span class="dot">·</span>
+        <span>Custom colors available</span><span class="dot">·</span>
+        <span>Ships in 3–5 days</span><span class="dot">·</span>
+        <span>Lasts forever</span><span class="dot">·</span>
+        <span>Perfect for gifts</span><span class="dot">·</span>
+        <span>Made to order</span><span class="dot">·</span>
+      </div>
+    </div>
+
+    <!-- ══ FEATURED PRODUCTS ════════════════════════════════ -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center mb-8 reveal">
+          <p class="section-eyebrow">Bestsellers</p>
+          <h2 class="section-title">Our favourite blooms</h2>
+          <p class="section-subtitle" style="margin: 0 auto">
+            Carefully twisted, full of character — pick your perfect flower.
+          </p>
+        </div>
+
+        <div class="product-grid mt-12">
+          <article class="card reveal product-card" data-cat="roses">
+            <div class="card-img">
+              <img
+                src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?w=500&q=80"
+                alt="Blush Rose"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Roses</span>
+              <h3 class="card-title">Blush Rose Bunch</h3>
+              <p class="card-desc">
+                Five soft-pink roses twisted tight with wire stems — a timeless
+                classic.
+              </p>
+              <div class="card-footer">
+                <span class="card-price">$12</span>
+                <button
+                  class="btn btn-primary btn-sm btn-add-cart"
+                  data-name="Blush Rose Bunch"
+                  data-price="12"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="card reveal reveal-delay-1 product-card"
+            data-cat="mixed"
+          >
+            <div class="card-img">
+              <img
+                src="https://images.unsplash.com/photo-1455582916367-25f75bfc6710?w=500&q=80"
+                alt="Spring Mix"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Mixed</span>
+              <h3 class="card-title">Spring Medley</h3>
+              <p class="card-desc">
+                Eight blooms in a full rainbow of colours — the showpiece
+                arrangement.
+              </p>
+              <div class="card-footer">
+                <span class="card-price">$22</span>
+                <button
+                  class="btn btn-primary btn-sm btn-add-cart"
+                  data-name="Spring Medley"
+                  data-price="22"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="card reveal reveal-delay-2 product-card"
+            data-cat="sunflower"
+          >
+            <div class="card-img">
+              <img
+                src="https://images.unsplash.com/photo-1597848212624-a19eb35e2651?w=500&q=80"
+                alt="Golden Sunflower"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Sunflowers</span>
+              <h3 class="card-title">Golden Sunflower</h3>
+              <p class="card-desc">
+                Three bold yellow sunflowers with verdant green stems — pure
+                sunshine.
+              </p>
+              <div class="card-footer">
+                <span class="card-price">$10</span>
+                <button
+                  class="btn btn-primary btn-sm btn-add-cart"
+                  data-name="Golden Sunflower"
+                  data-price="10"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="text-center mt-10 reveal">
+          <a href="products.html" class="btn btn-outline">View All Flowers →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ WHY US ═════════════════════════════════════════════ -->
+    <section
+      class="section"
+      style="
+        background: var(--bg-muted);
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+      "
+    >
+      <div class="container">
+        <div class="text-center mb-12 reveal">
+          <p class="section-eyebrow">Why choose us</p>
+          <h2 class="section-title">Crafted differently</h2>
+        </div>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 1.5rem;
+          "
+        >
+          <div class="value-item reveal">
+            <div class="value-icon">✿</div>
+            <div class="value-text">
+              <h4>Handmade Only</h4>
+              <p>
+                Zero machines. Every petal twisted by our makers personally.
+              </p>
+            </div>
+          </div>
+          <div class="value-item reveal reveal-delay-1">
+            <div class="value-icon">∞</div>
+            <div class="value-text">
+              <h4>Lasts Forever</h4>
+              <p>No wilting, no watering. These flowers outlast the seasons.</p>
+            </div>
+          </div>
+          <div class="value-item reveal reveal-delay-2">
+            <div class="value-icon">⬡</div>
+            <div class="value-text">
+              <h4>Custom Colours</h4>
+              <p>Any palette, any occasion. We match your vision exactly.</p>
+            </div>
+          </div>
+          <div class="value-item reveal reveal-delay-3">
+            <div class="value-icon">◎</div>
+            <div class="value-text">
+              <h4>Packaged with Care</h4>
+              <p>Gift-ready wrapping and fast, safe delivery every order.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ CTA ════════════════════════════════════════════════ -->
+    <section class="section">
+      <div class="container">
+        <div
+          class="reveal"
+          style="
+            background: var(--bg-surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 4rem 3rem;
+            text-align: center;
+            box-shadow: var(--shadow-md);
+          "
+        >
+          <p class="section-eyebrow">Ready?</p>
+          <h2 class="section-title">Order your bouquet today</h2>
+          <p class="section-subtitle" style="margin: 1rem auto 2.5rem">
+            Custom-made to your exact taste. Takes under a minute to order.
+          </p>
+          <a href="order.html" class="btn btn-primary btn-lg"
+            >Place a Custom Order</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ FOOTER ══════════════════════════════════════════════ -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+              Bloomy Twists
+            </div>
+            <p>
+              Handmade pipe cleaner flowers crafted with love and an eye for
+              colour. Every bloom unique, every order personal.
+            </p>
+          </div>
+          <div>
+            <p class="footer-heading">Pages</p>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Shop</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="order.html">Order</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer-heading">Info</p>
+            <ul class="footer-links">
+              <li><a href="#">Shipping Policy</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <p class="footer-heading">Contact</p>
+            <p><span>✉</span> hello@bloomytwists.com</p>
+            <p><span>📱</span> +1 (555) 012-3456</p>
+            <p><span>📍</span> Flower Street, Craft City</p>
+            <p><span>⏰</span> Mon–Sat, 9 AM – 6 PM</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 Bloomy Twists. All rights reserved.</p>
+          <p>Handmade with love ✿</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast"><span class="toast-icon"></span><span></span></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
